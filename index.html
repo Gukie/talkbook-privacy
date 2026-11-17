@@ -82,7 +82,7 @@
   </head>
   <body>
     <h1>小江湖 隐私政策</h1>
-    <p class="updated">最后更新：2026 年 11 月 9 日</p>
+    <p class="updated">最后更新：2026 年 11 月 17 日</p>
 
     <p>
       小江湖（以下称“本应用”）用来随口记下生活。说两句，就留下一篇日记；你也可以把一段时间的日记收成一条「江湖风雨路」。我们把隐私放在首位：
@@ -103,32 +103,29 @@
         <td><strong>否</strong>。音频既不上传，也不会保存成文件——转写完成即丢弃。</td>
       </tr>
       <tr>
-        <td>日记文本</td>
+        <td>日记日期和正文</td>
         <td>保存在你手机本地的数据库中。</td>
-        <td>否（除非你使用“江湖风雨路”，见下条）。</td>
+        <td>默认保存在本机。你可以手动导出，也可以确认发送给 DeepSeek（见下条）。</td>
       </tr>
       <tr>
         <td><strong>生成江湖风雨路时的日记内容</strong></td>
         <td>
-          当你主动点击“生成江湖风雨路”，本应用会把你所选日期范围内的日记正文发送至
-          <strong>DeepSeek（杭州深度求索人工智能基础技术研究有限公司）</strong>
+          每次生成时，你选择日期范围并点击“同意并发送”后，本应用会把范围内的日记日期和正文直接发送至
+          第三方 AI 服务 <strong>DeepSeek</strong>
           的接口，由其写成这条江湖风雨路并返回。
         </td>
-        <td><strong>是</strong>。这是本应用唯一对外发送内容的场景。</td>
+        <td><strong>是</strong>。开发者的服务器不接收请求或生成结果。</td>
       </tr>
       <tr>
         <td>DeepSeek API 密钥</td>
         <td>由你自行填写，保存在系统钥匙串（Keychain）中，仅用于向 DeepSeek 发起请求。</td>
-        <td>仅作为请求凭证发送给 DeepSeek，我们不会收集或上传。</td>
+        <td>仅作为请求凭证发送给 DeepSeek。</td>
       </tr>
     </table>
 
     <div class="note">
-      <strong>请特别注意：</strong>“生成江湖风雨路”会把你选中的日记原文发送到第三方服务器。
-      发送前，本应用会征得你的明确同意，说明发出的是所选日记正文、接收方是 DeepSeek。
-      如果你的日记包含不希望离开设备的内容，请不要对该时间段使用生成功能。
-      本应用的其他所有功能（录音、转写、写日记、查看、编辑、删除、导出）都完全在本机完成。
-      DeepSeek 对所收到日记正文的保护，不低于本政策所述的处理方式：仅用于当次写成江湖风雨路，不用于广告或用户画像。
+      每次发送都需要你单独确认，包括覆盖重生成。你可以点击“取消”拒绝本次发送，继续使用录音、
+      转写、查看和编辑等日记功能。你也可以在应用设置中清除 DeepSeek API 密钥。
     </div>
 
     <h2>二、我们不收集的信息</h2>
@@ -138,7 +135,7 @@
       <li>通讯录、日历、照片</li>
       <li>设备标识符、广告标识符（IDFA）</li>
       <li>使用行为统计、崩溃日志</li>
-      <li>你的姓名、手机号、邮箱等身份信息（本应用无需注册、无需登录）</li>
+      <li>注册或登录资料（本应用不要求注册或登录。若你把身份信息写进日记，该内容属于日记正文。）</li>
     </ul>
     <p>
       本应用<strong>不包含任何第三方分析、广告或追踪 SDK</strong>，也不做用户画像或个性化推荐。
@@ -156,19 +153,21 @@
       </tr>
       <tr>
         <td>语音识别</td>
-        <td>调用 iOS 系统的语音识别能力，把语音转成文字（优先使用设备端离线识别）。</td>
+        <td>使用 iOS 的设备端离线语音识别，把语音转成文字。无法离线转写时可手动输入。</td>
       </tr>
     </table>
     <p>你可以随时在“系统设置 → 隐私与安全性”中撤回这些权限。撤回后仍可手动输入文字写日记。</p>
 
     <h2>四、数据的存储与删除</h2>
     <ul>
-      <li>所有日记与江湖风雨路保存在你手机本地，我们没有服务器，也无法访问你的内容。</li>
+      <li>日记和生成结果保存在设备上。开发者不在服务器上保留副本。</li>
       <li>你可以在应用内左滑删除任意一条日记。</li>
-      <li><strong>卸载本应用会永久删除全部本地数据</strong>，且无法恢复，请先自行导出备份。</li>
+      <li>删除本应用会移除其本地日记数据库。你可以在删除前导出备份，在设置里清除 API 密钥。</li>
       <li>
-        通过“生成江湖风雨路”发送给 DeepSeek 的内容，其保留与处理方式适用
-        DeepSeek 自身的隐私政策。DeepSeek 对该等内容的保护不低于本政策所述方式。
+        本应用的本地删除操作无法删除此前已发送给 DeepSeek 的内容。如需查询这些内容的保留情况或请求删除，
+        请通过下方邮箱联系我们。我们会根据需要通过
+        <a href="https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html">DeepSeek 开放平台</a>
+        联系服务提供方处理请求。
       </li>
     </ul>
 
@@ -188,7 +187,7 @@
     <!-- ============ English ============ -->
     <div class="lang-sep">
       <h1>小江湖 (Xiao Jianghu) Privacy Policy</h1>
-      <p class="updated">Last updated: November 9, 2026</p>
+      <p class="updated">Last updated: November 17, 2026</p>
 
       <p>
         Xiao Jianghu (小江湖) is a voice journal. You speak a little, and a diary entry stays
@@ -211,23 +210,23 @@
           <td><strong>No.</strong> Audio is never uploaded and never saved to a file.</td>
         </tr>
         <tr>
-          <td>Journal text</td>
+          <td>Journal entry dates and text</td>
           <td>Stored locally on your device.</td>
-          <td>No (unless you generate 江湖风雨路, see below).</td>
+          <td>Stored locally by default. You can export entries or approve sending them to DeepSeek as described below.</td>
         </tr>
         <tr>
-          <td><strong>Journal text when generating 江湖风雨路</strong></td>
+          <td><strong>Journal entries when generating 江湖风雨路</strong></td>
           <td>
-            After you explicitly agree, tapping “生成江湖风雨路” sends the full text of the
-            entries in your selected date range to <strong>DeepSeek</strong> to write that piece.
-            The prompt states what is sent and that the recipient is DeepSeek.
+            After you select a date range and tap “同意并发送” (Agree and Send), the app sends the
+            entry dates and full text directly to the third-party AI service <strong>DeepSeek</strong>
+            to generate 江湖风雨路. Each request, including an overwrite, requires its own confirmation.
           </td>
-          <td><strong>Yes.</strong> This is the only case where content is sent off-device.</td>
+          <td><strong>Yes.</strong> The request and generated result do not go through the app developer’s server.</td>
         </tr>
         <tr>
           <td>DeepSeek API key</td>
           <td>Entered by you, stored in the system Keychain, used only to call DeepSeek.</td>
-          <td>Sent to DeepSeek as a credential only; we never collect it.</td>
+          <td>Sent to DeepSeek as the request credential.</td>
         </tr>
       </table>
 
@@ -241,17 +240,22 @@
       <h2>3. Permissions</h2>
       <p>
         <strong>Microphone</strong> — to record your voice for transcription.<br />
-        <strong>Speech recognition</strong> — to convert speech to text, preferring on-device
-        recognition. You may revoke both in iOS Settings; manual text entry still works.
+        <strong>Speech recognition</strong> — to convert speech to text on the device.
+        You may revoke both permissions in iOS Settings. Manual text entry remains available.
       </p>
 
       <h2>4. Storage and deletion</h2>
       <p>
-        All entries live on your device; we operate no servers and cannot access your content.
-        You can delete any entry in the app. <strong>Uninstalling the app permanently deletes
-        all local data.</strong> Content sent to DeepSeek is governed by DeepSeek’s own privacy
-        policy. DeepSeek’s protection of that diary text is no less than the handling described
-        in this policy: it is used only to write that piece, not for advertising or profiling.
+        The app stores journal entries and generated results on your device. The app developer
+        keeps no server copies. You can cancel any send request and continue using the journal.
+        You can clear your API key in the app’s settings and delete entries in the app. Deleting
+        the app removes its local journal database. You can export entries as a backup first.
+      </p>
+      <p>
+        Local deletion does not remove data previously sent to DeepSeek. For retention information
+        or a deletion request regarding that data, contact us at the email address below. We will
+        contact the <a href="https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html">DeepSeek Open Platform</a>
+        as needed to handle your request.
       </p>
 
       <h2>5. Children’s privacy</h2>
