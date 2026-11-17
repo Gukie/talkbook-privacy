@@ -164,10 +164,16 @@
       <li>你可以在应用内左滑删除任意一条日记。</li>
       <li>删除本应用会移除其本地日记数据库。你可以在删除前导出备份，在设置里清除 API 密钥。</li>
       <li>
-        本应用的本地删除操作无法删除此前已发送给 DeepSeek 的内容。如需查询这些内容的保留情况或请求删除，
-        请通过下方邮箱联系我们。我们会根据需要通过
-        <a href="https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html">DeepSeek 开放平台</a>
-        联系服务提供方处理请求。
+        根据 <a href="https://api-docs.deepseek.com/zh-cn/guides/kv_cache/">DeepSeek API 文档</a>，
+        DeepSeek 默认在服务端为 API 请求的输入和模型输出建立上下文磁盘缓存，供后续匹配的请求复用。
+        缓存停止使用后，通常会在数小时至数天内自动清除。这个时间范围仅适用于这类缓存。
+      </li>
+      <li>
+        在本应用中删除日记或清除 API 密钥只影响本机。如需查询此前发送给 DeepSeek 的内容的保留情况或请求删除，
+        请发邮件至 <a href="mailto:talkbook_admin@163.com">talkbook_admin@163.com</a>。
+        我们会处理你的请求，并在需要时依据
+        <a href="https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html">DeepSeek 开放平台服务条款第 3.3 节</a>
+        联系 DeepSeek 寻求协助。
       </li>
     </ul>
 
@@ -252,10 +258,18 @@
         the app removes its local journal database. You can export entries as a backup first.
       </p>
       <p>
-        Local deletion does not remove data previously sent to DeepSeek. For retention information
-        or a deletion request regarding that data, contact us at the email address below. We will
-        contact the <a href="https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html">DeepSeek Open Platform</a>
-        as needed to handle your request.
+        The <a href="https://api-docs.deepseek.com/guides/kv_cache/">DeepSeek API documentation</a>
+        explains that DeepSeek creates a server-side disk cache from API inputs and model outputs
+        by default for reuse in matching requests. DeepSeek usually clears the cache automatically
+        within a few hours to a few days after it stops being used. This timeframe applies to the
+        context cache.
+      </p>
+      <p>
+        Deleting an entry or clearing your API key in the app affects only your device. To ask
+        about retention or request deletion of content already sent to DeepSeek, email us at
+        <a href="mailto:talkbook_admin@163.com">talkbook_admin@163.com</a>. We will handle your
+        request and contact DeepSeek for assistance when needed under
+        <a href="https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html">section 3.3 of the DeepSeek Open Platform Terms of Service</a>.
       </p>
 
       <h2>5. Children’s privacy</h2>
